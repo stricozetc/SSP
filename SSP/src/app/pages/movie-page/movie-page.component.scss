@@ -1,0 +1,12 @@
+@import '../../../variables.scss';
+
+.movie-page {
+  background-color: $movieListBackground;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 auto;
+
+  width: 100%;
+  height: 100%;
+}

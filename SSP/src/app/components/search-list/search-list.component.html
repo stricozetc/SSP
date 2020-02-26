@@ -1,0 +1,12 @@
+<div class="search-list">
+  <div class="search-list__option"
+        *ngFor="let option of options"
+        (click)="goToFilmDetails(option.id)">
+    <div class="search-list__option-poster"
+          [ngStyle]="{'background': getPosterUrl(option.poster_path)}">
+    </div>
+    <div class="search-list__option-title">
+      {{option.title}}
+    </div>
+  </div>
+</div>

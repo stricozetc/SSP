@@ -1,0 +1,9 @@
+<div class="movie-list">
+  <div>
+    <app-movie-card *ngFor="let card of cards"
+                    [movieTitle]="card.title"
+                    [backgroundPath]="card.poster_path"
+                    [movieId]="card.id">
+    </app-movie-card>
+  </div>
+</div>

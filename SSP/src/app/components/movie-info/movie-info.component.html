@@ -1,0 +1,11 @@
+<div class="movie-info">
+  <div class="movie-info__banner"
+        [ngStyle]="{'background': getPosterUrl()}">
+  </div>
+  <div class="movie-info-information">
+    <div class="movie-info-information__title">Title: {{title}}</div>
+    <div class="movie-info-information__description">Overview: {{description}}</div>
+    <div class="movie-info-information__rate">Total Rating: {{rate}}</div>
+    <app-button caption="Add to Favorites"></app-button>
+  </div>
+</div>

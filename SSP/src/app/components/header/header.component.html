@@ -1,0 +1,15 @@
+<div class="header">
+  <div class="header-content">
+    <div class="header-content-search-control" (clickOutside)="close()">
+      <app-input (inputChange)="search($event)"
+                  (inputFocus)="focusEvent()"></app-input>
+      <app-search-list *ngIf="isSearchListShown"
+                        [options]="searchedMovies">
+      </app-search-list>
+    </div>
+    <app-button caption="Movies"
+                (buttonClick)="goToMovies()"></app-button>
+    <app-button caption="Favorites"
+                (buttonClick)="goToFavorites()"></app-button>
+  </div>
+</div>

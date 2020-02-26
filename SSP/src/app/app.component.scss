@@ -1,0 +1,11 @@
+@import '../variables.scss';
+
+.footer {
+  height: 10px;
+  flex: 0 0 auto;
+  background-color: $movieListBackground;
+}
+
+.main {
+  flex: 1 0 auto;
+}

@@ -1,0 +1,11 @@
+@import '../../../variables.scss';
+
+.input {
+
+  &__control {
+    outline: none;
+    font-size: $baseFontSize;
+    font-family: $baseFontFamily;
+    padding: 5px;
+  }
+}

@@ -1,0 +1,13 @@
+@import "../../../variables.scss";
+
+.movie-list {
+  background-color: $movieListBackground;
+
+  & > div {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
