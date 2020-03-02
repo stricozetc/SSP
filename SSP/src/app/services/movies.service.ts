@@ -26,6 +26,10 @@ export class MoviesService {
   }
 
   decrementCounterFavoriteMovies(): void {
-    this.countFavoriteMovies.next(JSON.parse(localStorage.getItem('movieArray')).length--);
+    if (JSON.parse(localStorage.getItem('movieArray')).length === 0) {
+      this.countFavoriteMovies.next(0);
+    } else {
+      this.countFavoriteMovies.next(JSON.parse(localStorage.getItem('movieArray')).length--);
+    }
   }
 }

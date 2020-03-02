@@ -18,6 +18,7 @@ export class HeaderComponent implements OnInit {
 
   public ngOnInit(): void {
     this.movieService.countFavoriteMovies.subscribe(value => {
+      console.log(value);
       this.counterFavoriteMovies = this.movieService.countFavoriteMovies.value;
     });
   }
