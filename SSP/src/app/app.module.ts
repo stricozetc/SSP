@@ -15,6 +15,7 @@ import { ButtonComponent } from './components/button/button.component';
 import { InputComponent } from './components/input/input.component';
 import { SearchListComponent } from './components/search-list/search-list.component';
 import { ClickOutsideDirective } from './directives/click-outside.directive';
+import { FavoritePageComponent } from './pages/favorite-page/favorite-page.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ClickOutsideDirective } from './directives/click-outside.directive';
     ButtonComponent,
     InputComponent,
     SearchListComponent,
-    ClickOutsideDirective
+    ClickOutsideDirective,
+    FavoritePageComponent
   ],
   imports: [
     BrowserModule,

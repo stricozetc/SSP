@@ -1,0 +1,15 @@
+@import "../../../variables.scss";
+
+.favorite-page {
+  background-color: $movieListBackground;
+  height: 100%;
+
+  & > div {
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}

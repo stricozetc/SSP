@@ -17,5 +17,25 @@
     &-search-control {
       position: relative;
     }
+
+    &-favorites {
+      position: relative;
+
+      &__counter {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: $headerCounterBackground;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $baseWhite;
+        font-family: $baseFontFamily;
+        padding: 2px;
+        position: absolute;
+        right: 0;
+        top: -10px;
+      }
+    }
   }
 }
