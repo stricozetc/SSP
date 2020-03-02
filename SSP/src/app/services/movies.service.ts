@@ -6,8 +6,16 @@ import { Observable, BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class MoviesService {
-  public countFavoriteMovies: BehaviorSubject<number> = new BehaviorSubject(JSON.parse(localStorage.getItem('movieArray')).length);
+  public countFavoriteMovies: BehaviorSubject<number> = this.setCounterFavoriteMoives();
   constructor(private http: HttpClient) { }
+
+  setCounterFavoriteMoives(): BehaviorSubject<number> {
+    if (JSON.parse(localStorage.getItem('movieArray'))) {
+      return new BehaviorSubject(JSON.parse(localStorage.getItem('movieArray')).length);
+    } else {
+      return new BehaviorSubject(0);
+    }
+  }
 
   getMovieList(page: number): Observable<any> {
     return this.http.get(`https://api.themoviedb.org/3/movie/popular?api_key=8499fef6a795af7cd4eafae996227a97&language=en-US&page=${page}`);
