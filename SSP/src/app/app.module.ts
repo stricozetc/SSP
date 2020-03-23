@@ -16,6 +16,7 @@ import { InputComponent } from './components/input/input.component';
 import { SearchListComponent } from './components/search-list/search-list.component';
 import { ClickOutsideDirective } from './directives/click-outside.directive';
 import { FavoritePageComponent } from './pages/favorite-page/favorite-page.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FavoritePageComponent } from './pages/favorite-page/favorite-page.compo
     InputComponent,
     SearchListComponent,
     ClickOutsideDirective,
-    FavoritePageComponent
+    FavoritePageComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,

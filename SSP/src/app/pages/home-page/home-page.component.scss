@@ -1,0 +1,26 @@
+@import "../../../variables.scss";
+
+.home-page {
+  background-color: $movieListBackground;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & > div {
+    width: 60%;
+    text-align: center;
+  }
+  
+  &__title,
+  &__description {
+    color: $baseWhite;
+    margin-bottom: 20px;
+    font-family: $baseFontFamily;
+    font-size: $baseFontSize + 10;
+  }
+
+  &__description {
+    font-size: $baseFontSize + 6;
+  }
+}

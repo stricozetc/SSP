@@ -18,12 +18,15 @@ export class HeaderComponent implements OnInit {
 
   public ngOnInit(): void {
     this.movieService.countFavoriteMovies.subscribe(value => {
-      console.log(value);
       this.counterFavoriteMovies = this.movieService.countFavoriteMovies.value;
     });
   }
 
   public goToMovies(): void {
+    this.router.navigate(['/movies']);
+  }
+
+  public goToHome(): void {
     this.router.navigate(['/']);
   }
 
